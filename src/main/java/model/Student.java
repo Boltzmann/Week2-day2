@@ -9,9 +9,8 @@ public abstract class Student {
         this.name = name;
         this.id = id;
     }
-    public String getName(){
-        return name;
-    }
+    public abstract String getName();
+
     public int getId(){
         return id;
     }
@@ -28,4 +27,5 @@ public abstract class Student {
     public int hashCode() {
         return Objects.hash(name, id);
     }
+
 }

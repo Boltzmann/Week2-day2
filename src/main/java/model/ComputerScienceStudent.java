@@ -16,4 +16,8 @@ public class ComputerScienceStudent extends Student{
                 '}';
     }
 
+    @Override
+    public String getName() {
+        return this.name + " is a Computer Science Student.";
+    }
 }
