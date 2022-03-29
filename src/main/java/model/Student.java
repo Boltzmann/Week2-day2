@@ -2,16 +2,15 @@ package model;
 
 import java.util.Objects;
 
-public class Student {
+public abstract class Student {
     public String name;
     public int id;
     public Student(String name, int id){
         this.name = name;
         this.id = id;
     }
-    public String getName(){
-        return name;
-    }
+    public abstract String getName();
+
     public int getId(){
         return id;
     }
@@ -28,4 +27,5 @@ public class Student {
     public int hashCode() {
         return Objects.hash(name, id);
     }
+
 }
