@@ -62,4 +62,18 @@ public class Smartphone implements Radio, GPS{
     public String getPosition() {
         return "Hamburg";
     }
+
+    public static void main(String[] args) {
+        // setter vom Array
+        // toString
+        Contact a = new Friend("Best Friend", "12345");
+        Contact[] oneContacts = {
+                a,
+                new Friend("2nd Best Friend", "2345")
+        };
+        Smartphone one = new Smartphone("3", "Fairphone", oneContacts);
+        System.out.println(one);
+        one.setListOfAllContacts(new Contact[]{new Friend("One and only friend", "040 123456")});
+        System.out.println(one);
+    }
 }
