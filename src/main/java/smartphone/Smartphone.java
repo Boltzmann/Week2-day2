@@ -16,11 +16,10 @@ public class Smartphone implements Radio, GPS{
 
     @Override
     public String toString() {
-        return "Smartphone{" +
-                "model='" + model + '\'' +
-                ", manufacturer='" + manufacturer + '\'' +
-                ", listOfAllContacts=" + Arrays.toString(listOfAllContacts) +
-                '}';
+        return "Smartphone:\n" +
+                "smartphone model='" + model + '\'' +
+                ",smartphone manufacturer='" + manufacturer + '\'' +
+                ", listOfAllContacts=" + Arrays.toString(listOfAllContacts);
     }
 
     public String getModel() {
