@@ -1,6 +1,6 @@
 package model;
 
-public class ComputerScienceStudent extends Student{
+public class ComputerScienceStudent extends Student implements Citizen{
     String specialization;
 
     public ComputerScienceStudent(String name, int id, String specialization) {
@@ -20,5 +20,15 @@ public class ComputerScienceStudent extends Student{
     @Override
     public String getName() {
         return this.name + " is a Computer Science Student.";
+    }
+
+    @Override
+    public String getAdress() {
+        return "Köln";
+    }
+
+    @Override
+    public int getIdentityCardNumber() {
+        return 0;
     }
 }
